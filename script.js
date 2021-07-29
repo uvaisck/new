@@ -13,9 +13,7 @@ function nameValid(){
         return true;
     
     }
-    else{
-        $("#nameSpan").html("characters only");
-        return false;
+
     }
 
 function mobileValid() {
