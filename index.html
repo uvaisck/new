@@ -197,7 +197,7 @@
 
           <div class="form-group col-md-12">
             <label for="inputname">NAME</label>
-            <input type="text"  class="form-control" name="name" id="nameText" placeholder="Name">
+            <input type="text"  class="form-control" name="name" id="nameText" oninput="this.value=this.value.replace(/[^A-Za-z-,.;'&/.() ]|^ /g,'')" placeholder="Name">
             <p class="valid" id="nameSpan" style="color:#a52a2a;"></p>
             
             
