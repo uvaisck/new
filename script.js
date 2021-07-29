@@ -1,8 +1,8 @@
 function nameValid(){
-    var name = $("#nameText").val();
+    var name = $("#name").val();
     var reference = /^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
 
-    if(name === "")
+    if(name == "")
     {
         $("#nameSpan").html("This field cannot be empty.");
         return false;
@@ -11,14 +11,13 @@ function nameValid(){
     {
         $("#nameSpan").html("");
         return true;
+    
     }
-    else{
-        $("#nameSpan").html("Only Letters are allowed.");
-        return false;
+
     }
-}
+
 function mobileValid() {
-    var mobile = $("#mobileText").val();
+    var mobile = $("#mobile").val();
     var reference = /^\d+$/;
 
     if(mobile === "")
@@ -47,7 +46,7 @@ function mobileValid() {
 
 
 function emailValid() {
-    var email = $("#emailText").val();
+    var email = $("#email").val();
     var reference = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
 
     if(email === "")
@@ -69,7 +68,7 @@ function emailValid() {
 
 
 function messageValid() {
-    var name = $("#messageText").val();
+    var name = $("#message").val();
     var reference = /^[-a-zA-Z-()]+(\s+[-a-zA-Z-()]+)*$/;
 
     if(name === "")
@@ -90,19 +89,19 @@ function messageValid() {
     }
 }
 
-$("#nameText").on('keyup',function (){
+$("#name").on('keyup',function (){
         nameValid();
 })
 
 
-$("#mobileText").on('keyup',function () {
+$("#mobile").on('keyup',function () {
     
     mobileValid();
 })
-$("#emailText").on('keyup',function () {
+$("#email").on('keyup',function () {
     emailValid();
 })
 
-$("#messageText").on('keyup',function () {
+$("#message").on('keyup',function () {
    messageValid();
 })
