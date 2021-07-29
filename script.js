@@ -7,10 +7,6 @@ function nameValid(){
         $("#nameSpan").html("This field cannot be empty.");
         return false;
     }
-    else if(name.endsWith(" ")){
-         $("#nameSpan").html("");
-          return false;
-    }
     else if(reference.test(name))
     {
         $("#nameSpan").html("");
